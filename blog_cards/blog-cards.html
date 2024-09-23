@@ -1,0 +1,61 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<!-- <?php 
+$ogp = get_blog_urls();
+if(!empty($ogp)) :
+?> -->
+  <div class="blog-swiper fade-in-block">
+	<!-- <?php foreach($ogp as $url => $ogp_array) : ?> -->
+		<a href="<?= $url ?>" target="_blank" class="blog-card">
+		<article>
+		  <img src="<?= $ogp_array['image'] ?>" alt="article thumbnail image" width="360" height="200">
+		  <div class="blog-card-content">
+			<p class="blog-card-title">
+				<!-- <?= $ogp_array['title'] ?> -->
+			</p>
+			<p class="blog-card-description">
+				<!-- <?= $ogp_array['description'] ?> -->
+			</p>
+		  </div>
+		</article>
+		</a>
+	<!-- <?php endforeach; ?> -->
+  </div>
+<!-- <?php endif; ?> -->
+ 
+<script>
+// blog slider
+$(document).ready(function(){
+  if ($('.blog-swiper').length === 0) {
+    return;
+  }
+  $('.blog-swiper').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    infinite: true,
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    lazyLoad: 'progressive',
+    pauseOnHover: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+  });
+});
+
+
+</script>
