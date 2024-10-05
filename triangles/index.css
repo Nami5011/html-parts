@@ -1,0 +1,215 @@
+.triangles-border-top {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-border-top::after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  transform: translateX(-50%);
+  border-width: 0 21.6px 30px 21.6px;
+  border-color: transparent transparent #333 transparent;
+}
+
+.triangles-border-right {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-border-right::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  content: "";
+  transform: translateY(-50%);
+  border-width: 21.6px 0 21.6px 30px;
+  border-color: transparent transparent transparent #333;
+}
+
+.triangles-border-bottom {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-border-bottom::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  content: "";
+  transform: translateX(-50%);
+  border-width: 30px 21.6px 0 21.6px;
+  border-color: #333 transparent transparent transparent;
+}
+
+.triangles-border-left {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-border-left::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "";
+  transform: translateY(-50%);
+  border-width: 21.6px 30px 21.6px 0;
+  border-color: transparent #333 transparent transparent;
+}
+
+.triangles-clip-path-top {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-clip-path-top::after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  transform: translateX(-50%);
+  width: 40px;
+  aspect-ratio: 1/0.8660254038;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #666;
+}
+
+.triangles-clip-path-right {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-clip-path-right::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  content: "";
+  transform: translateY(-50%);
+  height: 40px;
+  aspect-ratio: 0.8660254038/1;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  background-color: #666;
+}
+
+.triangles-clip-path-bottom {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-clip-path-bottom::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  content: "";
+  transform: translateX(-50%);
+  width: 40px;
+  aspect-ratio: 1/0.8660254038;
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background-color: #666;
+}
+
+.triangles-clip-path-left {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-clip-path-left::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "";
+  transform: translateY(-50%);
+  height: 40px;
+  aspect-ratio: 0.8660254038/1;
+  -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
+          clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  background-color: #666;
+}
+
+.triangles-clip-path-gradient-top {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-clip-path-gradient-top::after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  transform: translateX(-50%);
+  width: 40px;
+  aspect-ratio: 1/0.8660254038;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background: linear-gradient(0deg, rgb(97, 142, 255) 0%, rgb(180, 118, 255) 100%);
+}
+
+.triangles-clip-path-gradient-right {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-clip-path-gradient-right::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  content: "";
+  transform: translateY(-50%);
+  height: 40px;
+  aspect-ratio: 0.8660254038/1;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  background: linear-gradient(180deg, rgb(80, 113, 255) 0%, rgb(153, 61, 129) 75%);
+}
+
+.triangles-clip-path-gradient-bottom {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-clip-path-gradient-bottom::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  content: "";
+  transform: translateX(-50%);
+  width: 40px;
+  aspect-ratio: 1/0.8660254038;
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: linear-gradient(180deg, rgb(45, 41, 143) 0%, rgb(42, 113, 179) 75%);
+}
+
+.triangles-clip-path-gradient-left {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.triangles-clip-path-gradient-left::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "";
+  transform: translateY(-50%);
+  height: 40px;
+  aspect-ratio: 0.8660254038/1;
+  -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
+          clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  background: linear-gradient(90deg, rgb(120, 0, 212) 0%, rgb(196, 82, 0) 100%);
+}/*# sourceMappingURL=index.css.map */
