@@ -1,8 +1,8 @@
 // triangle top using border
 .triangles-border-top {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-border-top::after {
 	position: absolute;
@@ -12,15 +12,15 @@
 	transform: translateX(-50%);
 
 	// triangle
-	border-width: 0 calc(30px * .72) 30px calc(30px * .72);
+	border-width: 0 calc(60px * .72) 60px calc(60px * .72);
 	border-color: transparent transparent #333 transparent;
 }
 
 // triangle right using border
 .triangles-border-right {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-border-right::after {
 	position: absolute;
@@ -30,15 +30,15 @@
 	transform: translateY(-50%);
 
 	// triangle
-	border-width: calc(30px * .72) 0 calc(30px * .72) 30px;
+	border-width: calc(60px * .72) 0 calc(60px * .72) 60px;
 	border-color: transparent transparent transparent #333;
 }
 
 // triangle bottom using border
 .triangles-border-bottom {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-border-bottom::after {
 	position: absolute;
@@ -48,15 +48,15 @@
 	transform: translateX(-50%);
 
 	// triangle
-	border-width: 30px calc(30px * .72) 0 calc(30px * .72);
+	border-width: 60px calc(60px * .72) 0 calc(60px * .72);
 	border-color: #333 transparent transparent transparent;
 }
 
 // triangle left using border
 .triangles-border-left {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-border-left::after {
 	position: absolute;
@@ -66,7 +66,7 @@
 	transform: translateY(-50%);
 
 	// triangle
-	border-width: calc(30px * .72) 30px calc(30px * .72) 0;
+	border-width: calc(60px * .72) 60px calc(60px * .72) 0;
 	border-color: transparent #333 transparent transparent;
 }
 
@@ -74,8 +74,8 @@
 // triangle top using clip-path
 .triangles-clip-path-top {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-clip-path-top::after {
 	position: absolute;
@@ -85,7 +85,7 @@
 	transform: translateX(-50%);
 
 	// triangle
-	width: 40px;
+	width: 80px;
   aspect-ratio: 1/cos(30deg);
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	background-color: #666;
@@ -94,8 +94,8 @@
 // triangle right using clip-path
 .triangles-clip-path-right {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-clip-path-right::after {
 	position: absolute;
@@ -105,7 +105,7 @@
 	transform: translateY(-50%);
 
 	// triangle
-	height: 40px;
+	height: 80px;
   aspect-ratio: cos(30deg)/1;
 	clip-path: polygon(0 0, 0% 100%, 100% 50%);
 	background-color: #666;
@@ -114,8 +114,8 @@
 // triangle bottom using clip-path
 .triangles-clip-path-bottom {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-clip-path-bottom::after {
 	position: absolute;
@@ -125,7 +125,7 @@
 	transform: translateX(-50%);
 
 	// triangle
-	width: 40px;
+	width: 80px;
   aspect-ratio: 1/cos(30deg);
   clip-path: polygon(0 0, 100% 0, 50% 100%);
 	background-color: #666;
@@ -134,8 +134,8 @@
 // triangle left using clip-path
 .triangles-clip-path-left {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-clip-path-left::after {
 	position: absolute;
@@ -145,7 +145,7 @@
 	transform: translateY(-50%);
 
 	// triangle
-	height: 40px;
+	height: 80px;
   aspect-ratio: cos(30deg)/1;
   clip-path: polygon(0 50%, 100% 0, 100% 100%);
 	background-color: #666;
@@ -155,8 +155,8 @@
 // triangle top using clip-path - gradient
 .triangles-clip-path-gradient-top {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-clip-path-gradient-top::after {
 	position: absolute;
@@ -166,7 +166,7 @@
 	transform: translateX(-50%);
 
 	// triangle
-	width: 40px;
+	width: 80px;
   aspect-ratio: 1/cos(30deg);
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   background: linear-gradient(0deg, rgba(97,142,255,1) 0%, rgba(180,118,255,1) 100%);
@@ -175,8 +175,8 @@
 // triangle right using clip-path - gradient
 .triangles-clip-path-gradient-right {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-clip-path-gradient-right::after {
 	position: absolute;
@@ -186,7 +186,7 @@
 	transform: translateY(-50%);
 
 	// triangle
-	height: 40px;
+	height: 80px;
   aspect-ratio: cos(30deg)/1;
 	clip-path: polygon(0 0, 0% 100%, 100% 50%);
 	background: linear-gradient(180deg, rgba(80,113,255,1) 0%, rgba(153,61,129,1) 75%);
@@ -195,8 +195,8 @@
 // triangle bottom using clip-path - gradient
 .triangles-clip-path-gradient-bottom {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-clip-path-gradient-bottom::after {
 	position: absolute;
@@ -206,7 +206,7 @@
 	transform: translateX(-50%);
 
 	// triangle
-	width: 40px;
+	width: 80px;
   aspect-ratio: 1/cos(30deg);
   clip-path: polygon(0 0, 100% 0, 50% 100%);
 	background: linear-gradient(180deg, rgba(45,41,143,1) 0%, rgba(42,113,179,1) 75%);
@@ -215,8 +215,8 @@
 // triangle left using clip-path - gradient
 .triangles-clip-path-gradient-left {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 }
 .triangles-clip-path-gradient-left::after {
 	position: absolute;
@@ -226,7 +226,7 @@
 	transform: translateY(-50%);
 
 	// triangle
-	height: 40px;
+	height: 80px;
   aspect-ratio: cos(30deg)/1;
   clip-path: polygon(0 50%, 100% 0, 100% 100%);
 	background: linear-gradient(90deg, rgb(120, 0, 212) 0%, rgba(196,82,0,1) 100%);

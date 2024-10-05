@@ -1,7 +1,7 @@
 .triangles-border-top {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-border-top::after {
@@ -10,14 +10,14 @@
   top: 0;
   content: "";
   transform: translateX(-50%);
-  border-width: 0 21.6px 30px 21.6px;
+  border-width: 0 43.2px 60px 43.2px;
   border-color: transparent transparent #333 transparent;
 }
 
 .triangles-border-right {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-border-right::after {
@@ -26,14 +26,14 @@
   top: 50%;
   content: "";
   transform: translateY(-50%);
-  border-width: 21.6px 0 21.6px 30px;
+  border-width: 43.2px 0 43.2px 60px;
   border-color: transparent transparent transparent #333;
 }
 
 .triangles-border-bottom {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-border-bottom::after {
@@ -42,14 +42,14 @@
   bottom: 0;
   content: "";
   transform: translateX(-50%);
-  border-width: 30px 21.6px 0 21.6px;
+  border-width: 60px 43.2px 0 43.2px;
   border-color: #333 transparent transparent transparent;
 }
 
 .triangles-border-left {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-border-left::after {
@@ -58,14 +58,14 @@
   top: 50%;
   content: "";
   transform: translateY(-50%);
-  border-width: 21.6px 30px 21.6px 0;
+  border-width: 43.2px 60px 43.2px 0;
   border-color: transparent #333 transparent transparent;
 }
 
 .triangles-clip-path-top {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-clip-path-top::after {
@@ -74,7 +74,7 @@
   top: 0;
   content: "";
   transform: translateX(-50%);
-  width: 40px;
+  width: 80px;
   aspect-ratio: 1/0.8660254038;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -83,8 +83,8 @@
 
 .triangles-clip-path-right {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-clip-path-right::after {
@@ -93,7 +93,7 @@
   top: 50%;
   content: "";
   transform: translateY(-50%);
-  height: 40px;
+  height: 80px;
   aspect-ratio: 0.8660254038/1;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
@@ -102,8 +102,8 @@
 
 .triangles-clip-path-bottom {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-clip-path-bottom::after {
@@ -112,7 +112,7 @@
   bottom: 0;
   content: "";
   transform: translateX(-50%);
-  width: 40px;
+  width: 80px;
   aspect-ratio: 1/0.8660254038;
   -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
           clip-path: polygon(0 0, 100% 0, 50% 100%);
@@ -121,8 +121,8 @@
 
 .triangles-clip-path-left {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-clip-path-left::after {
@@ -131,7 +131,7 @@
   top: 50%;
   content: "";
   transform: translateY(-50%);
-  height: 40px;
+  height: 80px;
   aspect-ratio: 0.8660254038/1;
   -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
           clip-path: polygon(0 50%, 100% 0, 100% 100%);
@@ -140,8 +140,8 @@
 
 .triangles-clip-path-gradient-top {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-clip-path-gradient-top::after {
@@ -150,7 +150,7 @@
   top: 0;
   content: "";
   transform: translateX(-50%);
-  width: 40px;
+  width: 80px;
   aspect-ratio: 1/0.8660254038;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -159,8 +159,8 @@
 
 .triangles-clip-path-gradient-right {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-clip-path-gradient-right::after {
@@ -169,7 +169,7 @@
   top: 50%;
   content: "";
   transform: translateY(-50%);
-  height: 40px;
+  height: 80px;
   aspect-ratio: 0.8660254038/1;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
@@ -178,8 +178,8 @@
 
 .triangles-clip-path-gradient-bottom {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-clip-path-gradient-bottom::after {
@@ -188,7 +188,7 @@
   bottom: 0;
   content: "";
   transform: translateX(-50%);
-  width: 40px;
+  width: 80px;
   aspect-ratio: 1/0.8660254038;
   -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
           clip-path: polygon(0 0, 100% 0, 50% 100%);
@@ -197,8 +197,8 @@
 
 .triangles-clip-path-gradient-left {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .triangles-clip-path-gradient-left::after {
@@ -207,7 +207,7 @@
   top: 50%;
   content: "";
   transform: translateY(-50%);
-  height: 40px;
+  height: 80px;
   aspect-ratio: 0.8660254038/1;
   -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
           clip-path: polygon(0 50%, 100% 0, 100% 100%);
