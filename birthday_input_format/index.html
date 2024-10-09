@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+	<title>Triangles CSS(SCSS)</title>
+</head>
+<body>
+<main>
+<section class="w-max mx-auto my-14">
+  <h1 class="mb-4 text-center text-xl text-gray-700 font-bold">日付にスラッシュ(/)を追加 - 自動でフォーマット</h1>
+  <h2 class="mb-7 font-['Poppins'] text-center text-lg text-gray-700 font-bold">Auto Date Formater</h2>
+  <div class="flex justify-center gap-12">
+
+    <input
+      id="birthday_ja"
+      class="birthday"
+      type="tel"
+      name="birthday"
+      placeholder="YYYY / MM / DD"
+      maxlength="14"
+      class="form-control"
+      pattern="[0-9]{4} / [0-9]{2} / [0-9]{2}"
+    />
+
+  </div>
+</section>
+</main>
+
+
+</body>
+</html>
