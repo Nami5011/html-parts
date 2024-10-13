@@ -15,4 +15,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const digits = e.target.value.replace(/\D/g, '').match(/(\d{0,4})(\d{0,2})(\d{0,2})/);
     e.target.value = digits[1].length < 4 ? digits[1] : digits[1] + ' / ' + digits[2] + (digits[2].length === 2 ? ' / ' + digits[3] : '');
   });
+
+  document.getElementById('birthday_en').addEventListener('input', function (e) {
+    let value = e.target.value;
+    const lastChar = value.slice(-1);
+    if (lastChar === '/') {
+      e.target.value = value.replace(/[0-9]\s\/$/, '');
+      return;
+    }
+
+    const digits = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,2})(\d{0,4})/);
+    e.target.value = digits[1].length < 2 ? digits[1] : digits[1] + ' / ' + digits[2] + (digits[2].length === 2 ? ' / ' + digits[3] : '');
+  });
 });
