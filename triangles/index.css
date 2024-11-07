@@ -75,7 +75,7 @@
   content: "";
   transform: translateX(-50%);
   width: 80px;
-  aspect-ratio: 1/0.8660254038;
+  aspect-ratio: 1/cos(30deg);
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   background-color: #666;
@@ -94,7 +94,7 @@
   content: "";
   transform: translateY(-50%);
   height: 80px;
-  aspect-ratio: 0.8660254038/1;
+  aspect-ratio: cos(30deg)/1;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
   background-color: #666;
@@ -113,7 +113,7 @@
   content: "";
   transform: translateX(-50%);
   width: 80px;
-  aspect-ratio: 1/0.8660254038;
+  aspect-ratio: 1/cos(30deg);
   -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
           clip-path: polygon(0 0, 100% 0, 50% 100%);
   background-color: #666;
@@ -132,7 +132,7 @@
   content: "";
   transform: translateY(-50%);
   height: 80px;
-  aspect-ratio: 0.8660254038/1;
+  aspect-ratio: cos(30deg)/1;
   -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
           clip-path: polygon(0 50%, 100% 0, 100% 100%);
   background-color: #666;
@@ -151,7 +151,7 @@
   content: "";
   transform: translateX(-50%);
   width: 80px;
-  aspect-ratio: 1/0.8660254038;
+  aspect-ratio: 1/cos(30deg);
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   background: linear-gradient(0deg, rgb(97, 142, 255) 0%, rgb(180, 118, 255) 100%);
@@ -170,7 +170,7 @@
   content: "";
   transform: translateY(-50%);
   height: 80px;
-  aspect-ratio: 0.8660254038/1;
+  aspect-ratio: cos(30deg)/1;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
   background: linear-gradient(180deg, rgb(80, 113, 255) 0%, rgb(153, 61, 129) 75%);
@@ -189,7 +189,7 @@
   content: "";
   transform: translateX(-50%);
   width: 80px;
-  aspect-ratio: 1/0.8660254038;
+  aspect-ratio: 1/cos(30deg);
   -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
           clip-path: polygon(0 0, 100% 0, 50% 100%);
   background: linear-gradient(180deg, rgb(45, 41, 143) 0%, rgb(42, 113, 179) 75%);
@@ -208,7 +208,7 @@
   content: "";
   transform: translateY(-50%);
   height: 80px;
-  aspect-ratio: 0.8660254038/1;
+  aspect-ratio: cos(30deg)/1;
   -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
           clip-path: polygon(0 50%, 100% 0, 100% 100%);
   background: linear-gradient(90deg, rgb(120, 0, 212) 0%, rgb(196, 82, 0) 100%);
