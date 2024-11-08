@@ -8,26 +8,126 @@
   <link rel="stylesheet" type="text/css" href="index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
-	<title>Simple Arrows CSS(SCSS)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+	<title>POPUP with JS</title>
 </head>
 <body>
-  <section>
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Open Modal</button>
+  
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+  </div>
+
+  <!-- The Card -->
+  <section class="mt-12 mb-[120px]">
+    <h1 class="mb-7 text-center text-xl font-bold">POPUP zooming up from the clicked element</h1>
+
+    <div class="card-container">
+      <div class="card" onclick="openPopup(event)">
+        <div class="card-img">
+          <span class="badge-fav">Guest fav</span>
+          <img src="https://i.pinimg.com/736x/5e/33/6f/5e336f283b6a295514548365c83266e5.jpg" alt="Sunlit Haven">
+        </div>
+        <div class="card-header">
+          <h3 class="title">Sunlit Haven in Asheville, North Carolina</h3>
+          <div class="rating">★4.9(503)</div>
+        </div>
+        <p class="card-body">
+          Discover Sunlit Haven, your perfect countryside escape surrounded by lush farmland and rich natural beauty.
+          Step outside to enjoy a barbecue in the garden, taking in views of the rolling fields and vibrant greenery.
+          With easy access to a nearby supermarket, you'll have everything you need for a relaxing stay that feels both peaceful and convinient.
+        </p>
       </div>
 
-    </div>
-  </section>
+      <div class="card" onclick="openPopup(event)">
+        <div class="card-img">
+          <span class="badge-fav">Guest fav</span>
+          <img src="https://i.pinimg.com/736x/01/b0/b5/01b0b5d01c616ed87c043eea8f23fc1b.jpg" alt="Nordic Reteat">
+        </div>
+        <div class="card-header">
+          <h3 class="title">Nordic Retreat</h3>
+          <div class="rating">★4.9(362)</div>
+        </div>
+        <p class="card-body">
+          A Scandinavian-style modern hotel located right in the heart of downtown, adjacent to a stunning national park.
+          This spacious suite features two beautifully designed bedrooms and two sleek bathrooms, ideal for families or friends traveling together.
+          Unwind in the airy living area with its plush sectional sofa, minimalist decor and floor-to-ceiling windows that invite natural light and serene
+          park views. Experience a perfect blend of city convenience and nature's tranquility at Nordic Reteat.
+        </p>
+      </div>
 
+      <div class="card" onclick="openPopup(event)">
+        <div class="card-img">
+          <span class="badge-fav">Guest fav</span>
+          <img src="https://i.pinimg.com/736x/b8/d5/8e/b8d58e5f170a0fb4fca1976dc41a9cd4.jpg" alt="The Coastal Loft">
+        </div>
+        <div class="card-header">
+          <h3 class="title">The Coastal Loft</h3>
+          <div class="rating">★4.8(412)</div>
+        </div>
+        <p class="card-body">
+          Step into The Coastal Loft, where high ceilings, sunlit windows, and natural rattan furniture create a breezy,
+          seaside-inspired escape. Relax in the spacious lounge or make use of the dedicated meeting room for business needs.
+          Perfect for work or leisure, The Coastal Loft brings the tranquility of the outdoors inside.
+        </p>
+      </div>
+
+      <div class="card" onclick="openPopup(event)">
+        <div class="card-img">
+          <span class="badge-fav">Guest fav</span>
+          <img src="https://i.pinimg.com/736x/2b/e5/52/2be55242f051e902d02adb20f30bd6d0.jpg" alt="Modern">
+        </div>
+        <div class="card-header">
+          <h3 class="title">Modern</h3>
+          <div class="rating">★4.8(412)</div>
+        </div>
+        <p class="card-body">
+          Step into The Coastal Loft, where high ceilings, sunlit windows, and natural rattan furniture create a breezy,
+          seaside-inspired escape. Relax in the spacious lounge or make use of the dedicated meeting room for business needs.
+          Perfect for work or leisure, The Coastal Loft brings the tranquility of the outdoors inside.
+        </p>
+      </div>
+
+      <div class="card" onclick="openPopup(event)">
+        <div class="card-img">
+          <span class="badge-fav">Guest fav</span>
+          <img src="https://i.pinimg.com/736x/41/fc/2b/41fc2b28f344ac9665d589a9259cccd1.jpg" alt="Bohemian">
+        </div>
+        <div class="card-header">
+          <h3 class="title">Bohemian</h3>
+          <div class="rating">★4.8(412)</div>
+        </div>
+        <p class="card-body">
+          Step into The Coastal Loft, where high ceilings, sunlit windows, and natural rattan furniture create a breezy,
+          seaside-inspired escape. Relax in the spacious lounge or make use of the dedicated meeting room for business needs.
+          Perfect for work or leisure, The Coastal Loft brings the tranquility of the outdoors inside.
+        </p>
+      </div>
+
+      <div class="card" onclick="openPopup(event)">
+        <div class="card-img">
+          <span class="badge-fav">Guest fav</span>
+          <img src="https://i.pinimg.com/736x/a2/a8/ba/a2a8ba382a5932768804d00ed78b0195.jpg" alt="Tropical">
+        </div>
+        <div class="card-header">
+          <h3 class="title">Tropical</h3>
+          <div class="rating">★4.8(412)</div>
+        </div>
+        <p class="card-body">
+          Step into The Coastal Loft, where high ceilings, sunlit windows, and natural rattan furniture create a breezy,
+          seaside-inspired escape. Relax in the spacious lounge or make use of the dedicated meeting room for business needs.
+          Perfect for work or leisure, The Coastal Loft brings the tranquility of the outdoors inside.
+        </p>
+      </div>
+    </div>
+
+  </section>
 
 </body>
 </html>
