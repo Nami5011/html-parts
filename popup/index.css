@@ -20,17 +20,45 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  border-radius: 30px;
-  width: 80%;
+  padding-right: 15px;
+  border-radius: 8px;
   z-index: 11;
+  width: 80vw;
+  max-width: 960px;
+  height: 80vh;
+  max-height: 720px;
+}
+.popup .popup-inner {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  width: 100%;
+  height: 100%;
+}
+.popup .popup-inner::-webkit-scrollbar {
+  width: 4px;
+  background-color: #fff;
+}
+.popup .popup-inner::-webkit-scrollbar-thumb {
+  background: #aaa;
+  width: 4px;
+  border-radius: 4px;
+}
+.popup img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 8px;
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #fff;
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: -32px;
+  right: -32px;
   font-size: 26px;
   line-height: 14px;
   font-weight: bold;
@@ -44,6 +72,139 @@
   color: #222222;
   text-decoration: none;
   cursor: pointer;
+}
+
+.popup-content {
+  display: flex;
+  justify-content: space-between;
+  color: #222222;
+  font-family: "Inter";
+  margin-top: 20px;
+}
+
+.popup-content-left {
+  border-right: solid 0.6px #dddddd;
+  padding-right: 20px;
+  margin-right: 20px;
+  max-width: 600px;
+  width: 90%;
+}
+.popup-content-left .room-name {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 26px;
+}
+.popup-content-left .award {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 5%;
+  border-radius: 12px;
+  border: solid 0.6px #dddddd;
+  margin-top: 20px;
+}
+.popup-content-left .award .award-trophy {
+  font-size: 36px;
+}
+.popup-content-left .award .award-content {
+  width: 250px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 8px;
+}
+.popup-content-left .award .award-rating {
+  margin-left: auto;
+  font-size: 20px;
+}
+.popup-content-left .description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.popup-content-right {
+  margin-right: auto;
+}
+.popup-content-right .fee-top {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.popup-content-right .fee-top .night {
+  font-size: 16px;
+  font-weight: 400;
+}
+.popup-content-right .date-table {
+  border-radius: 8px;
+  border: solid 0.6px #aaa;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.popup-content-right .date-table .box-date,
+.popup-content-right .date-table .box-guests {
+  padding: 10px;
+  cursor: pointer;
+}
+.popup-content-right .date-table .box-date .title,
+.popup-content-right .date-table .box-guests .title {
+  font-size: 10px;
+  font-weight: 700;
+}
+.popup-content-right .date-table .box-date .date,
+.popup-content-right .date-table .box-date .guests,
+.popup-content-right .date-table .box-guests .date,
+.popup-content-right .date-table .box-guests .guests {
+  font-size: 14px;
+}
+.popup-content-right .date-table .box-date {
+  width: 50%;
+}
+.popup-content-right .date-table .box-date:first-child {
+  border-right: solid 0.6px #aaa;
+}
+.popup-content-right .date-table .box-guests {
+  width: 100%;
+  border-top: solid 0.6px #aaa;
+  position: relative;
+}
+.popup-content-right .date-table .box-guests::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%) rotate(45deg);
+  border-right: solid 2px #222222;
+  border-bottom: solid 2px #222222;
+  width: 8px;
+  height: 8px;
+}
+.popup-content-right .button-reserve {
+  height: 48px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #E31C5F;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.popup-content-right .payment-msg {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.popup-content-right .fee-breakdown {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.popup-content-right .fee-breakdown.total {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: solid 0.6px #dddddd;
 }
 
 /* Card section */

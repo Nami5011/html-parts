@@ -3,28 +3,31 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   // Get the modal
   var modal = document.getElementById("popup");
-
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
+  var close = document.getElementsByClassName("close")[0];
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
+  close.onclick = function() {
+    closePopup();
   }
-
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal) {
-      modal.style.display = "none";
+      closePopup();
     }
   }
-
 });
+
+function closePopup() {
+  const modal = document.getElementById("popup");
+  modal.style.display = "none";
+  document.body.style.overflow = "visible";
+}
 
 function openPopup(event) {
   setPopupContent(event);
-  var modal = document.getElementById("popup");
+  const modal = document.getElementById("popup");
   modal.style.display = "block";
+  document.body.style.overflow = "hidden";
 }
 
 function setPopupContent(elm) {
