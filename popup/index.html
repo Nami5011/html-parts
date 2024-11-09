@@ -8,34 +8,76 @@
   <link rel="stylesheet" type="text/css" href="index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 	<title>POPUP with JS</title>
 </head>
 <body>
   
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
+  <!-- The popup -->
+  <div id="popup" class="popup-bg">
 
-    <!-- Modal content -->
-    <div class="modal-content">
+    <!-- popup content -->
+    <div class="popup">
       <span class="close">&times;</span>
-      <p>Some text in the Modal..</p>
+      <img src="" alt="">
+      <div class="popup-content">
+        <div class="popup-content-left">
+          <h2 class="room-name"></h2>
+          <div class="award">
+            <div class="award-trophy">🏆</div>
+            <div class="award-content">One of the most loved homes on BearBnB, according to guests</div>
+            <div class="award-rating"></div>
+          </div>
+          <p class="description"></p>
+        </div>
+        <div class="popup-content-right">
+          <div class="fee">¥ 15,000 <span class="night">night</span></div>
+          <div class="date-table">
+            <div class="box-date">
+              <div class="title">CHECK-IN</div>
+              <div class="date">11/12/2099</div>
+            </div>
+            <div class="box-date">
+              <div class="title"></div>
+              <div class="date">11/15/2099</div>
+            </div>
+            <div class="box-guests">
+              <div class="title">GUESTS</div>
+              <div class="guests">2 guests</div>
+            </div>
+          </div>
+          <button type="button" class="button-reserve">Reserve</button>
+          <p class="payment-msg">You won't be charged yet</p>
+          <div class="fee-breakdown">
+            <div class="title">¥ 15,000 x 3 nights</div>
+            <div class="fee">¥ 45,000</div>
+          </div>
+          <div class="fee-breakdown">
+            <div class="title">Cleaning fee</div>
+            <div class="fee">¥ 7,500</div>
+          </div>
+          <div class="fee-breakdown total">
+            <div class="title">Total</div>
+            <div class="fee">¥ 52,500</div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
 
   <!-- The Card -->
-  <section class="mt-12 mb-[120px]">
-    <h1 class="mb-7 text-center text-xl font-bold">POPUP zooming up from the clicked element</h1>
+  <section class="mt-12 mb-[120px] max-w-[932px] w-full mx-auto">
+    <h1 class="mb-7 text-2xl font-bold font['Inter'] text-[#222222]">POPUP zooming up from the clicked element</h1>
 
     <div class="card-container">
-      <div class="card" onclick="openPopup(event)">
+      <div class="card" onclick="openPopup(this)" data-id="1">
         <div class="card-img">
           <span class="badge-fav">Guest fav</span>
           <img src="https://i.pinimg.com/736x/5e/33/6f/5e336f283b6a295514548365c83266e5.jpg" alt="Sunlit Haven">
         </div>
         <div class="card-header">
-          <h3 class="title">Sunlit Haven in Asheville, North Carolina</h3>
+          <h3 class="title">Sunlit Haven in North Carolina</h3>
           <div class="rating">★4.9(503)</div>
         </div>
         <p class="card-body">
@@ -45,13 +87,13 @@
         </p>
       </div>
 
-      <div class="card" onclick="openPopup(event)">
+      <div class="card" onclick="openPopup(this)" data-id="2">
         <div class="card-img">
           <span class="badge-fav">Guest fav</span>
           <img src="https://i.pinimg.com/736x/01/b0/b5/01b0b5d01c616ed87c043eea8f23fc1b.jpg" alt="Nordic Reteat">
         </div>
         <div class="card-header">
-          <h3 class="title">Nordic Retreat</h3>
+          <h3 class="title">Nordic Retreat in Oslo</h3>
           <div class="rating">★4.9(362)</div>
         </div>
         <p class="card-body">
@@ -62,13 +104,13 @@
         </p>
       </div>
 
-      <div class="card" onclick="openPopup(event)">
+      <div class="card" onclick="openPopup(this)" data-id="3">
         <div class="card-img">
           <span class="badge-fav">Guest fav</span>
           <img src="https://i.pinimg.com/736x/b8/d5/8e/b8d58e5f170a0fb4fca1976dc41a9cd4.jpg" alt="The Coastal Loft">
         </div>
         <div class="card-header">
-          <h3 class="title">The Coastal Loft</h3>
+          <h3 class="title">The Coastal Loft in London</h3>
           <div class="rating">★4.8(412)</div>
         </div>
         <p class="card-body">
@@ -78,39 +120,39 @@
         </p>
       </div>
 
-      <div class="card" onclick="openPopup(event)">
+      <div class="card" onclick="openPopup(this)" data-id="4">
         <div class="card-img">
           <span class="badge-fav">Guest fav</span>
-          <img src="https://i.pinimg.com/736x/2b/e5/52/2be55242f051e902d02adb20f30bd6d0.jpg" alt="Modern">
+          <img src="https://i.pinimg.com/736x/2b/e5/52/2be55242f051e902d02adb20f30bd6d0.jpg" alt="Atrium Suite">
         </div>
         <div class="card-header">
-          <h3 class="title">Modern</h3>
-          <div class="rating">★4.8(412)</div>
+          <h3 class="title">Atrium Suite in New York</h3>
+          <div class="rating">★4.9(325)</div>
         </div>
         <p class="card-body">
-          Step into The Coastal Loft, where high ceilings, sunlit windows, and natural rattan furniture create a breezy,
-          seaside-inspired escape. Relax in the spacious lounge or make use of the dedicated meeting room for business needs.
-          Perfect for work or leisure, The Coastal Loft brings the tranquility of the outdoors inside.
+          Enjoy a cozy movie night with the built in projector, offering a cinematic experience from the comfort of the spacious lounge area.
+          Unwind in the luxuty bathroom with a wide deep bathtub, ideal for soaking away the day's adventures. Plus,
+          this pet-friendly suite welcomes your furry companions, ensuring everyone in the family feels at home.
         </p>
       </div>
 
-      <div class="card" onclick="openPopup(event)">
+      <div class="card" onclick="openPopup(this)" data-id="5">
         <div class="card-img">
           <span class="badge-fav">Guest fav</span>
-          <img src="https://i.pinimg.com/736x/41/fc/2b/41fc2b28f344ac9665d589a9259cccd1.jpg" alt="Bohemian">
+          <img src="https://i.pinimg.com/736x/41/fc/2b/41fc2b28f344ac9665d589a9259cccd1.jpg" alt="The Oasis Lounge">
         </div>
         <div class="card-header">
-          <h3 class="title">Bohemian</h3>
-          <div class="rating">★4.8(412)</div>
+          <h3 class="title">The Oasis Lounge in Amsterdam</h3>
+          <div class="rating">★4.8(294)</div>
         </div>
         <p class="card-body">
-          Step into The Coastal Loft, where high ceilings, sunlit windows, and natural rattan furniture create a breezy,
-          seaside-inspired escape. Relax in the spacious lounge or make use of the dedicated meeting room for business needs.
-          Perfect for work or leisure, The Coastal Loft brings the tranquility of the outdoors inside.
+          A cozy, echo-friendly retreat hosted by a warm and cheerful owner who's passionate about sustainability.
+          From supporting local vegan-friendly restaurants to promoting mindful travel, every detail here reflects a commitment to the environment.
+          With 24/7 support and security, your stay will be as seamless as it is inspiring.
         </p>
       </div>
 
-      <div class="card" onclick="openPopup(event)">
+      <div class="card" onclick="openPopup(this)" data-id="6">
         <div class="card-img">
           <span class="badge-fav">Guest fav</span>
           <img src="https://i.pinimg.com/736x/a2/a8/ba/a2a8ba382a5932768804d00ed78b0195.jpg" alt="Tropical">
