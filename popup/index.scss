@@ -1,3 +1,14 @@
+@mixin md() {
+  @media screen and (max-width: 980px) {
+      @content;
+  }
+}
+@mixin sm() {
+  @media screen and (max-width: 767px) {
+      @content;
+  }
+}
+
 /* The Popup background */
 .popup-bg {
   display: none;
@@ -20,18 +31,35 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  padding-right: 15px;
+  padding-right: 10px;
   border-radius: 8px;
   z-index: 11;
   width: 80vw;
   max-width: 960px;
   height: 80vh;
   max-height: 720px;
+  animation-name: popupAnimation;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  @include md {
+    width: 90vw;
+  }
+  @include sm {
+    width: 97vw;
+    height: 90vh;
+    max-height: none;
+    padding: 0;
+    padding-bottom: 15px;
+  }
   .popup-inner {
     overflow-y: scroll;
     scrollbar-width: thin;
     width: 100%;
     height: 100%;
+    padding-right: 5px;
+    @include sm {
+      padding-right: 0;
+    }
     &::-webkit-scrollbar {
       width: 4px;
       background-color: #fff; 
@@ -48,6 +76,29 @@
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
+    @include sm {
+      border-radius: 8px 8px 0 0;
+    }
+  }
+}
+
+:root {
+  --popup-origin-top: 0;
+  --popup-origin-left: 0;
+}
+
+@keyframes popupAnimation {
+  from {
+    opacity: 0.6;
+    top: var(--popup-origin-top);
+    left: var(--popup-origin-left);
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -63,6 +114,10 @@
   padding: 6px;
   height: 30px;
   width: 30px;
+  @include sm {
+    top: -32px;
+    right: -4px;
+  }
 }
 
 .close:hover,
@@ -78,6 +133,10 @@
   color: #222222;
   font-family: "Inter";
   margin-top: 20px;
+  @include sm {
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
 }
 
 .popup-content-left {
@@ -85,7 +144,14 @@
   padding-right: 20px;
   margin-right: 20px;
   max-width: 600px;
-  width: 90%;
+  width: 60%;
+  @include sm {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+    max-width: auto;
+    width: 100%;
+  }
   .room-name {
     font-size: 22px;
     font-weight: 500;
@@ -118,16 +184,24 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
 .popup-content-right {
   margin-right: auto;
+  @include sm {
+    margin: 20px 0 0;
+    width: 100%;
+  }
   .fee-top {
     font-size: 22px;
     font-weight: 500;
     line-height: 26px;
     margin-bottom: 20px;
+    @include sm {
+      text-align: right;
+    }
     .night {
       font-size: 16px;
       font-weight: 400;
@@ -142,7 +216,7 @@
     .box-date,
     .box-guests {
       padding: 10px;
-      cursor: pointer;
+      cursor: not-allowed;
       .title {
         font-size: 10px;
         font-weight: 700;
@@ -184,10 +258,12 @@
     font-weight: 500;
     color: #fff;
     margin-bottom: 16px;
+    cursor: not-allowed;
   }
   .payment-msg {
     font-size: 14px;
     margin-bottom: 20px;
+    text-align: center;
   }
   .fee-breakdown {
     display: flex;
@@ -203,8 +279,19 @@
 }
 
 /* Card section */
+.card-section {
+  margin: 3rem auto 120px;
+  width: max-content;
+  max-width: 932px;
+  @include md {
+    max-width: 616px;
+  }
+  @include sm {
+    max-width: auto;
+    width: 95%;
+  }
+}
 .card-container {
-  max-width: calc(932px);
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
@@ -218,6 +305,9 @@
   font-family: "Inter";
   color: #222222;
   cursor: pointer;
+  @include sm {
+    width: 100%;
+  }
   &:hover {
     img {
       overflow: hidden;
