@@ -1,0 +1,33 @@
+.gradient-border {
+  border: 10px solid transparent;
+  -o-border-image: linear-gradient(45deg, rgb(45, 70, 253) 0%, rgb(131, 34, 195) 100%) 30 stretch;
+     border-image: linear-gradient(45deg, rgb(45, 70, 253) 0%, rgb(131, 34, 195) 100%) 30 stretch;
+}
+
+.card-white {
+  background-color: #fff;
+  padding: 20px;
+  margin: 40px auto;
+  width: 350px;
+  height: 100px;
+}
+
+h1, h2 {
+  font-family: "Noto Sans JP", "Poppins", sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+body {
+  background-color: #85CFF9;
+  color: #341542;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  min-height: 100vh;
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */
