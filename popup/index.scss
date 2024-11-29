@@ -39,6 +39,7 @@
   height: 80vh;
   max-height: 720px;
   animation-name: popupAnimation;
+  animation-timing-function: linear;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
   @include md {
